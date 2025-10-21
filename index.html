@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="Enterprise S.R.L. - general ">
+    <meta name="keywords" content="general ">
+    <title>Empresa S.R.L. - Objetives</title>
+    <link href="assets/img/favicon.png" type="image/png" rel="icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Iconos https://boxicons.com/?query  -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init({
+                publicKey: "iabbTur8Wwpyk8kcP",
+            });
+        })();
+    </script>
+    
+ 
+</head>
+<body>
+    <!-- Page Transition Overlay -->
+    <div class="page-transition" id="pageTransition">
+        <div class="spinner"></div>
+    </div>
+
+    <header>
+        <div class="nav-container" id="home">
+            <!-- Banner Image for Desktop -->
+            <div class="header-banner">
+                <img src="assets/img/logo_gen.png" alt="empresa S.R.L. Logo" class="banner-image">
+            </div> 
+
+            <div class="navbar__toggles flex--container">
+                <!-- Language Toggle -->
+                <div class="toggle-container flex--container">
+                    <div class="flag-zone" data-lang="es">
+                        <img src="assets/img/espana.png" alt="Español" class="toggle-flag" id="flag-es">
+                    </div>
+                    <div class="flag-zone" data-lang="en">
+                        <img src="assets/img/reino-unido.png" alt="English" class="toggle-flag" id="flag-en">
+                    </div>
+                    <div class="flag-zone" data-lang="fr">
+                        <img src="assets/img/france.png" alt="Francais" class="toggle-flag" id="flag-fr">
+                    </div>
+                </div>
+
+                <!-- theme Toggle -->
+       <div class="navbar__toggle--darkmode flex--container">
+          <input type="checkbox" name="color-scheme" id="darkmode-toggle" class="navbar__toggle--darkmode-input" >
+          <label for="darkmode-toggle" class="navbar__toggle--darkmode-label">
+            <i class="bx bx-sun navbar__toggle--darkmode-sun"></i>
+            <i class="bx bx-moon navbar__toggle--darkmode-moon"></i>            
+             <!-- <i class='bx bx-image-alt navbar__toggle--darkmode-ocean'></i>  -->
+          </label>
+        </div>           
+            </div>
+            
+            <nav role="navigation" aria-label="Main navigation">
+                <!-- hamburguesa -->
+                <div class="mobile-toggle" id="mobile-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu" id="nav-menu" aria-hidden="true">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link" data-section="home">Home</a>
+                    </li>
+                    <li class="nav-item dropdown-item">
+                         <a  class="nav-link dropdown-toggle" data-section="about" aria-haspopup="true" aria-expanded="false">About Us</a>                                                 
+                        <div class="dropdown" role="menu">
+                            <a id="nav-history" href="#history" class="dropdown-link" data-section="history" role="menuitem">History</a>
+                            <a id="nav-team" href="#team" class="dropdown-link" data-section="team" role="menuitem">Team</a>
+                           
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown-item">
+                        <a   class="nav-link dropdown-toggle" data-section="services" aria-haspopup="true" aria-expanded="false">Services</a>
+                        <div class="dropdown" role="menu">
+                            <a id="nav-trading" href="#trading" class="dropdown-link" data-section="trading" role="menuitem">Services 1</a>
+                            <a id="nav-transportation" href="#transportation" class="dropdown-link" data-section="transportation" role="menuitem">Services 2</a>
+                            <a id="nav-reception" href="#reception" class="dropdown-link" data-section="reception" role="menuitem">Services 3</a>
+                            <a id="nav-assaying" href="#assaying" class="dropdown-link" data-section="assaying" role="menuitem">Services 4</a>
+                            <a id="nav-smelting" href="#smelting" class="dropdown-link" data-section="smelting" role="menuitem">Services 5</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown-item">
+                        <a   class="nav-link dropdown-toggle" data-section="exports" aria-haspopup="true" aria-expanded="false">Exports</a>
+                        <div class="dropdown" role="menu">
+                            <a id="nav-destinations" href="#destinations" class="dropdown-link" data-section="destinations" role="menuitem">Destinations</a>
+                            <a id="nav-shipments" href="#shipments" class="dropdown-link" data-section="shipments" role="menuitem">Shipments</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Breadcrumb Navigation  -->
+        <div class="breadcrumb" id="breadcrumb" style="display: none;">
+              <span id="breadcrumb-current"></span>
+        </div> 
+
+        <!-- Home Section -->
+        <section id="home-section" class="spa-section active">
+            <div class="header-section" role="banner">
+                <div class="container">
+                    <h1 class="main-title" tabindex="0" id="home-title">
+                        BIENVENIDO A EMPRESA S.R.L.
+                    </h1>
+                    <p class="subtitle" tabindex="0" id="home-subtitle">
+                        Somos el Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, in nostrum facilis ex delectus ratione tempora obcaecati sequi animi voluptatem dicta, error quidem ab blanditiis!  en La Paz.
+                    </p>                    
+                </div>
+            </div> 
+
+            <!-- Trust seccion -->
+            <section id="trust" class="trust about" role="region" aria-labelledby="TRUST-title">
+                <div class="container">
+                    <h2 id="trust-title" class="section-title">Confianza y Respaldo</h2> 
+                    <p id="trust-subtitle" class="subtitle">Respaldados por regulación SBS y aliados estratégicos</p>
+                    
+                    <div class="bank-logos">
+                        <div class="bank-item">                                 
+                                <div class="bank-logo falabella"><img src="assets/img/Falabella-Banco-Logo.png"   > </div>                                
+                        </div>
+                        <div class="bank-item">
+                            <div class="bank-logo bbva"><img src="assets/img/bbva-logo.png"   ></div>
+                        </div>
+                        <div class="bank-item">
+                            <div class="bank-logo macro"><img src="assets/img/Macro-Logo.png"   ></div>
+                        </div>
+                        <div class="bank-item">
+                            <div class="bank-logo falabella">
+                                <img src="assets/img/secure_logo.png"   >
+                            </div>
+                        </div>
+                    </div>
+                   
+
+                    <div class="stats-container">
+                        <div class="stat-number pulse" id="counter">500+</div>
+                        <div id="trust-stat" class="stat-text">Más de 500 PYMES ya confían en nosotros</div>
+                    </div>
+
+                    <div class="trust-indicators">
+                        <div class="indicator-card">
+                            <div class="indicator-icon">🏛️</div>
+                            <div  id="trust-indicator1-title" class="indicator-title">Regulación SBS</div>
+                            <div id="trust-indicator1-content" class="indicator-description">
+                                Supervisados por la Superintendencia de Banca, Seguros y AFP, garantizando cumplimiento normativo y seguridad.
+                            </div>
+                        </div>
+
+                        <div class="indicator-card">
+                            <div class="indicator-icon">🤝</div>
+                            <div id="trust-indicator2-title" class="indicator-title">Alianzas Estratégicas</div>
+                            <div id="trust-indicator2-content" class="indicator-description">
+                                Respaldados por las instituciones financieras más confiables del mercado para ofrecer soluciones integrales.
+                            </div>
+                        </div>
+
+                        <div class="indicator-card">
+                            <div class="indicator-icon">🔐</div>
+                            <div id="trust-indicator3-title" class="indicator-title">Seguridad Certificada</div>
+                            <div id="trust-indicator3-content" class="indicator-description">
+                                Encriptación de nivel bancario y protocolos de seguridad avanzados para proteger tu información.
+                            </div>
+                        </div>
+
+                        <div class="indicator-card">
+                            <div class="indicator-icon">📈</div>
+                            <div id="trust-indicator4-title" class="indicator-title">Crecimiento Comprobado</div>
+                            <div id="trust-indicator4-content" class="indicator-description">
+                                Más de 500 PYMES han transformado sus finanzas con nuestra plataforma, generando resultados medibles.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="contact about" role="region" aria-labelledby="contact-title">
+                <div class="container">
+                    <h2 id="contact-title" class="section-title">Contact</h2>
+                    
+                    <div class="contact-wrapper">
+                        <!-- Left Column - Contact Information -->
+                        <div class="contact-info">
+                            <h3 id="contact-subtitle">Get in touch!</h3>
+                            <p id="contact-content">We’d love to hear from you! Send us a message with your comment, question, or just about anything and we will be happy to connect with you.</p>
+                            
+                            <div class="contact-details">
+                                <h4 id="contact-content1">Contact information</h4>
+                                
+                                
+                                <div class="contact-item">
+                                    <strong id="contact-content2">📞 Phone Numbers:</strong>
+                                    <ul class="phone-list">                        
+                                        <!-- Send me a message to WhatsApp-->
+                                        <li>+(591)67023053  <a href="https://wa.me/+59167023053/?text=Hello,%20I%20would%20like%20to%20inquire%20about%20your%20services." class="" aria-label="Contáctanos en WhatsApp" target="_blank" rel="noopener noreferrer" |>
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="green">
+                                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.451 3.488"/>
+                                            </svg>
+                                        </a> </li>
+                                        <li>+(591)67023053 <a href="https://wa.me/+59167023053/?text=Hello,%20I%20would%20like%20to%20inquire%20about%20your%20services." class="" aria-label="Contáctanos en WhatsApp" target="_blank" rel="noopener noreferrer" |>
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="green">
+                                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.451 3.488"/>
+                                            </svg>
+                                        </a> </li>
+                                        <li>+(591)67023053 <a href="https://wa.me/+59167023053/?text=Hello,%20I%20would%20like%20to%20inquire%20about%20your%20services." class="" aria-label="Contáctanos en WhatsApp" target="_blank" rel="noopener noreferrer" |>
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="green">
+                                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.451 3.488"/>
+                                            </svg>
+                                        </a> </li>
+                                        <li>+(591)2230740 </li>
+                                    </ul>
+                                </div>
+                                
+                                 <div class="contact-item">
+                                    <strong id="contact-content3">📧 Emails:</strong>                                     
+                                    <!-- Correo 1 -->
+                                    <div class="email-row">
+                                        fabinnerself@gmail.com
+                                        <a href="mailto:fabinnerself@gmail.com?subject=Consulta%20sobre%20tus%20servicios" target="_blank" rel="noopener noreferrer" aria-label="Enviar email">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="skyblue">
+                                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                                            </svg>
+                                        </a> 
+                                        <button class="copy-btn" data-email="fabinnerself@gmail.com" aria-label="Copiar email">
+                                            <svg width="22" height="22" viewBox="0 0 24 24" fill="blue">
+                                                <path d="M5 4h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 2v12h14V6H5zm2 3h10v2H7V9zm0 4h10v2H7v-2z"/>
+                                            </svg>
+                                        </button>
+                                        <div class="tooltip" id="copy-tooltip" aria-label="Correo Copiado al portapapeles">¡Correo Copiado al portapapeles!</div>
+                                    </div>
+
+                                    <!-- Correo 2 -->
+                                    <div class="email-row">
+                                        favian.medina.gemio@gmail.com
+                                        <a href="mailto:favian.medina.gemio@gmail.com?subject=Consulta%20sobre%20tus%20servicios" target="_blank" rel="noopener noreferrer" aria-label="Enviar email">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="skyblue">
+                                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                                            </svg>
+                                        </a>
+                                        <button class="copy-btn" data-email="favian.medina.gemio@gmail.com" aria-label="Copiar email">
+                                            <svg width="22" height="22" viewBox="0 0 24 24" fill="blue">
+                                                <path d="M5 4h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 2v12h14V6H5zm2 3h10v2H7V9zm0 4h10v2H7v-2z"/>
+                                            </svg>
+                                        </button>
+                                        <div class="tooltip" id="copy-tooltip1">¡Correo Copiado al portapapeles!</div>
+                                    </div>
+
+                                    <!-- Correo 3 -->
+                                    <div class="email-row">
+                                        fabinnerself@gmail.com
+                                        <a href="mailto:fabinnerself@gmail.com?subject=Consulta%20sobre%20tus%20servicios" target="_blank" rel="noopener noreferrer" aria-label="Enviar email">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="skyblue">
+                                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                                            </svg>
+                                        </a>
+                                        <button class="copy-btn" data-email="fabinnerself@gmail.com" aria-label="Copiar email">
+                                            <svg width="22" height="22" viewBox="0 0 24 24" fill="blue">
+                                                <path d="M5 4h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 2v12h14V6H5zm2 3h10v2H7V9zm0 4h10v2H7v-2z"/>
+                                            </svg>
+                                        </button>
+                                        <div class="tooltip" id="copy-tooltip2">¡Correo Copiado al portapapeles!</div>
+                                    </div>
+
+                                    <!-- Correo 4 -->
+                                    <div class="email-row">
+                                        favian.medina.gemio@gmail.com
+                                        <a href="mailto:favian.medina.gemio@gmail.com?subject=Consulta%20sobre%20tus%20servicios" target="_blank" rel="noopener noreferrer" aria-label="Enviar email">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="skyblue">
+                                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                                            </svg>
+                                        </a>
+                                        <button class="copy-btn" data-email="favian.medina.gemio@gmail.com" aria-label="Copiar email">
+                                            <svg width="22" height="22" viewBox="0 0 24 24" fill="blue">
+                                                <path d="M5 4h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 2v12h14V6H5zm2 3h10v2H7V9zm0 4h10v2H7v-2z"/>
+                                            </svg>
+                                        </button>
+                                        <div class="tooltip" id="copy-tooltip3">¡Correo Copiado al portapapeles!</div>
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <strong id="contact-content4">📍 Location:</strong>
+                                    <span>                                        
+                                        <span id="contact-content5"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ad similique, doloremque doloribus,   La Paz, Bolivia-South America.</span>
+                                        <!-- Google Maps / Location -->
+                                        <a href="https://www.google.com/maps?q=-16.49218139791949, -68.11731993334742"  aria-label="Encuéntranos en Google Maps" target="_blank" rel="noopener noreferrer">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                            </svg>
+                                        </a>
+                                         
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Right Column - Contact Form -->
+                        <div class="contact-form-wrapper">
+                            <h3 id="contact-form-title" class="form-title">Send message</h3>
+                            
+                            <div class="success-message" id="successMessage">
+                                ¡Message sent successfully! We'll get back to you soon.
+                            </div>
+                            
+                            <form class="contact-form" id="contactForm" novalidate>
+                                <div class="form-group">
+                                    <label id="contact-form-nombre" for="name">Name</label>
+                                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label id="contact-form-email" for="email">E-Mail</label>
+                                    <input type="email" id="email" name="email" placeholder="Enter your E-mail" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label id="contact-form-subject" for="subject">Subject</label>
+                                    <input type="text" id="subject" name="subject" placeholder="Enter a subject" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label id="contact-form-message" for="message">Message</label>
+                                    <textarea id="message" name="message" placeholder="Enter a message" required></textarea>
+                                </div>
+                                
+                                <button id="contact-form-submit" type="submit" class="submit-btn">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section> 
+
+        </section>
+
+        <!-- History Section -->
+        <section id="history-section" class="spa-section">
+            <div class="container">
+                <h2 id="history-title" class="section-title">History</h2>
+                <div class="history">
+                    <p  id="history-content1" class="feature-title-history"> Enterprise S.R.L. – A Legacy of Excellence in Precious Metals  </p>
+                    <p id="history-content2" class="features-grid-history">Enterprise S.R.L. was born out of a vision that began in the early 2010s when its founders were living in La Paz, Bolivia, South America. Teresa Camacho, one of the founders, started her career in jewelry at a store in La Paz, Bolivia. Her dream of establishing a company specializing in the trading and assaying of precious metals was always on the horizon.  </p>
+                    <p id="history-content3" class="features-grid-history">With years of knowledge and experience under her belt, Teresa achieved her goal, marking the beginning of a journey that would later evolve into something even greater. In collaboration with Mr. Vargas and Ms. Camacho, Enterprise S.R.L. was officially established in La Paz, Bolivia, with a clear mission: to provide personalized service tailored to the unique needs of each client.  </p>
+                    <p id="history-content4" class="features-grid-history">Since 2014, Ms. Camacho and Mr. Vargas have upheld the same standards of excellence, dedicating themselves to serving their customers with care and professionalism. Their commitment has been instrumental in building the foundation of Enterprise’s success.  </p>
+                    <p id="history-content5" class="features-grid-history">Who We Are and What We Do  </p>
+                  
+                </div>
+            </div>
+
+  <!-- mission -->
+            <section  class="about-us" role="region" aria-labelledby="about-us-title" id="about">
+                <div class="container">
+                <h2 id="mission-title" class="section-title">Mission</h2>
+
+                <div class="history">
+                <p id="mission-content" class="features-grid-history">Melting, refining, and processing precious metals, complying with quality standards and respecting the environment, to meet the different requirements of the domestic and international markets.</p>
+
+                </div>
+                </div>
+            </section>
+
+            <!-- vision -->
+            <section  class="about-us" role="region" aria-labelledby="about-us-title" id="about">
+                <div class="container">
+                <h2 id="vision-title" class="section-title">Vision</h2>
+
+                <div class="history">
+                <p id="vision-content" class="features-grid-history">To be the leading company in the domestic marketing and export of precious metals from Bolivia to the world.</p>
+
+                </div>
+                </div>
+            </section>
+
+            <!-- values -->    
+            <section  class="about-us" role="region" aria-labelledby="about-us-title" id="about">
+                <div class="container">
+                <h2 id="values-title" class="section-title">Values</h2>
+
+                    <div class="history">
+                    <ul>
+                        <li ><b id="values-content11">INTEGRITY:</b> <span id="values-content12"> We act correctly and fulfill our commitments. </span></li>
+                        <li ><b id="values-content21">RESPECT:</b><span id="values-content22"> We listen to others and understand their opinions.</span></li>
+                        <li ><b id="values-content31">TEAMWORK:</b> <span id="values-content32"> We are a family and work in a coordinated manner.</span></li>
+                        <li ><b id="values-content41">SOCIAL RESPONSIBILITY:</b><span id="values-content42"> We care about the well-being of our society and our Bolivia.</span><li>
+                    </ul>
+
+                    </div>
+                </div>
+            </section> 
+
+            <!-- commitments -->         
+            <section  class="about-us" role="region" aria-labelledby="about-us-title" id="about">
+                <div class="container">
+                <h2 id="commitments-title" class="section-title">Commitments</h2>
+
+                <div class="history">
+                <ul  >
+                    <li id="commitments-content1"><b>Metal exports</b></li>
+                    <li id="commitments-content2"><b>Environmental preservation</b></li>
+                    <li id="commitments-content3"><b>Social responsibility</b></li>
+                    <li id="commitments-content4"><b>Compliance with values</b></li>
+                </ul>
+
+                </div>
+                </div>
+            </section>             
+
+        </section>
+
+        <!-- Team Section -->
+        <section id="team-section" class="spa-section">
+            <div class="container">
+                <h2 id="team-title" class="section-title">Team</h2>
+                <div class="history">
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <h2 id="team-charge1">Gerente Administrativo</h2>
+                            <h3 class="service-title">Favian Medina</h3>
+                            <h2>+(591)67023053 <a
+                                    href="https://wa.me/+59167023053/?text=Hello,%20I%20would%20like%20to%20inquire%20about%20your%20services."
+                                    class="" aria-label="Contáctanos en WhatsApp" target="_blank"
+                                    rel="noopener noreferrer" |>
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="green">
+                                        <path
+                                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.451 3.488" />
+                                    </svg>
+                                </a> </h2>
+                            <h2 class="email-align-extra">
+                                <div class="email-row"> fabinnerself@gmail.com
+                                    <a href="mailto:fabinnerself@gmail.com?subject=Consulta%20sobre%20tus%20servicios"
+                                        target="_blank" rel="noopener noreferrer" aria-label="Enviar email">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="skyblue">
+                                            <path
+                                                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                                        </svg>
+                                    </a>
+                                    <button class="copy-btn" data-email="fabinnerself@gmail.com"
+                                        aria-label="Copiar email">
+                                        <svg width="22" height="22" viewBox="0 0 24 24" fill="blue">
+                                            <path
+                                                d="M5 4h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 2v12h14V6H5zm2 3h10v2H7V9zm0 4h10v2H7v-2z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </h2>
+                            <div class="tooltip" id="copy-tooltip4" aria-label="Correo Copiado al portapapeles">¡Correo Copiado al portapapeles!</div>
+                        </div>
+                        <div class="service-card">
+                            <h2 id="team-charge2">General manager</h2>
+                            <h3 class="service-title">Fernado Medina Gemio</h3>
+                            <h2>+(591)67023053 <a
+                                    href="https://wa.me/+59167023053/?text=Hello,%20I%20would%20like%20to%20inquire%20about%20your%20services."
+                                    class="" aria-label="Contáctanos en WhatsApp" target="_blank"
+                                    rel="noopener noreferrer" |>
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="green">
+                                        <path
+                                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.451 3.488" />
+                                    </svg>
+                                </a> </h2>
+                            <h2 class="email-align-extra">
+                                <div class="email-row"> favian.medina.gemio@gmail.com
+                                    <a href="mailto:favian.medina.gemio@gmail.com?subject=Consulta%20sobre%20tus%20servicios"
+                                        target="_blank" rel="noopener noreferrer" aria-label="Enviar email">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="skyblue">
+                                            <path
+                                                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                                        </svg>
+                                    </a>
+                                    <button class="copy-btn" data-email="favian.medina.gemio@gmail.com"
+                                        aria-label="Copiar email">
+                                        <svg width="22" height="22" viewBox="0 0 24 24" fill="blue">
+                                            <path
+                                                d="M5 4h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 2v12h14V6H5zm2 3h10v2H7V9zm0 4h10v2H7v-2z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </h2>
+                            <div class="tooltip" id="copy-tooltip5" aria-label="Correo Copiado al portapapeles">¡Correo Copiado al portapapeles!</div>
+                        </div>
+
+                    </div>                 
+            </div>
+        </div>
+        </section> 
+
+        <!-- Trading Section -->
+        <section id="trading-section" class="spa-section">
+            <div class="container">
+                <h2 id="services-trading-title" class="section-title">Trading</h2>
+            
+                <div class="history">
+            <p id="services-trading-content" class="features-grid-history">At Enterprise SRL we’re dedicated to creating deep analytical market assessments to always connect you to the precious metals market. Our live trading desk is here to ensure you realize the most accurate and maximum value for your precious metals. </p>
+            <p id="services-trading-content1" class="features-grid-history">Our in-house trading and treasury capabilities make financing convenient and easily accessible to our clients. And with our longstanding relationships with the world’s largest refineries we are able to provide favorable terms and rates directly to customers when needed. </p>
+                </div>
+                </div>            
+        </section>
+
+        <!-- Transportation Section -->
+        <section id="transportation-section" class="spa-section">
+            <div class="container">
+                <h2 id="services-transportation-title" class="section-title">Transportation</h2>
+    
+                <div class="history">
+                    <p id="services-transportation-content" class="features-grid-history">At Enterprise SRL we reduce cost without compromising safety. Our broad based and longstanding historical relationships with most major gold and silver producers allow us to provide conjunctive shipping arrangements wherever possible. And by operating in two refineries across North America we’re never too far, and offer our customers the best transportation rates available.
+                    Enterprise provides its Clients with competitive and secure transportation solutions. We have a long association and work exclusively with the world’s leading high security transportation and logistics companies. 
+                    Our forwarding agents comply with “OECD Due Diligence Guidance for Responsible Supply Chains of Minerals from Conflict Affected and High-Risk Areas” standards.
+                    Our Clients benefit from our global contacts with transportation companies ensuring the best terms and conditions. 
+                    We are able to arrange transportation from virtually any requested pick-up location with shipping to Enterprise, all undertaken in our name or on behalf of our Client.
+                    All transportation is fully insured. Any loss of insured metal will be paid out in cash.</p>
+                    <br>
+                    <p id="services-transportation-title1" class="feature-title-history">Process</p>
+                    <p id="services-transportation-content1" class="features-grid-history">Enterprise will provide offers from 1-2 forwarding agents. The Client will choose the most suitable forwarding agent for his purposes. 
+                    The following shipping advice and information are required from the Client:</p>
+                    <ul class="transportation">
+                        <li id="services-transportation-content2"   >Description of the material</li>
+                        <li id="services-transportation-content3"   >Number of packages or boxes</li>    
+                        <li id="services-transportation-content4"   >Gross weight of packaging, bags and pieces</li> 
+                        <li id="services-transportation-content5"   >Number of bags and pieces</li>  
+                        <li id="services-transportation-content6"   >Total net weight</li>   
+                        <li id="services-transportation-content7"   >Total estimated gold/silver content of shipment in ounces</li>  
+                        <li id="services-transportation-content8"   >Other information relating to the shipment as the Client may reasonably request</li>    
+                        <li id="services-transportation-content9"   >Name of the Client’s Representative at the weighing, melting and sampling procedures if one is designated</li>  
+                        <li id="services-transportation-content10"   >Arrival of the shipment at Enterprise</li> 
+                        <li id="services-transportation-content11"   >Enterprise will confirm to the Client that the goods have been received. </li> 
+                    </ul>
+                </div>
+            </div>            
+        </section>
+
+        <!-- Reception Section -->
+        <section id="reception-section" class="spa-section">
+            <div class="container">
+                <h2 id="services-reception-title" class="section-title">Reception</h2>
+            
+                <div class="history">
+            <p id="services-reception-content" class="features-grid-history">At Enterprise SRL, upon receipt of the shipment at its premises, inspects the received parcels, boxes and containers with respect to outside damage, the number of parcels/containments weight, the kind of metal received and other contingent non-conformities such as radioactivity. From all received metal deliveries, a sample is taken to perform a preliminary analysis.
+            
+            The material will then be weighed, homogenized and sampled in presence of the Client’s Representative, provided that the Client has exercised its right to be represented.
+            
+            A representative sample is of utmost importance to the Client and to all further internal processes. We guarantee our Clients the best homogenization techniques and sampling methods for any kind of metal. All data from each delivery is recorded in Enterprise SRL’s SAP system for the safety and reference of our Clients and to ensure full control of each batch in our ERP system. </p>
+            
+            <p id="services-reception-title1" class="feature-title-history">Logistics Process</p>
+            <ul class="transportation">
+            
+                <li id="services-reception-content1">Phase 1 – The precious metal is shipped to Enterprise SRL through a shipping agent in co-ordination with the Client.</li>
+                <li id="services-reception-content2">Phase 2 – As soon as the Advised Information is available Enterprise SRL’s Sales department will contact the Client’s Representative to agree on the date and time on which weighing, melting and sampling operations shall take place, provided that the Client has exercised its right to be represented.</li>
+                <li id="services-reception-content3">Phase 3 – Upon receipt of the shipment at its premises Enterprise SRL shall immediately inspect the boxes/containers/parcels.</li>
+                <li id="services-reception-content4">Phase 4 – Each shipment shall undergo the radioactivity check. Should it be positive, the carrier will not be allowed to unload the material and the shipment will be rejected.</li>
+                <li id="services-reception-content5">Phase 5 – If any of the boxes/containers/parcels are damaged or any of the seals on the boxes/containers/parcels are broken, Enterprise SRL shall immediately inform the Client about the extent of the damage to the boxes/containers/parcels or to the seals, and request approval to proceed with the weighing, melting and sampling operations. Pending the approval of the Client, the shipment shall be safely stored in Enterprise SRL’s vaults. Should non-conformities occur, depending on the process step (during unloading or upon acceptance of the delivered material) the Logistics department will segregate the material in the vault and wait for further instructions from the Sales department.</li>
+                <li id="services-reception-content6">Phase 6 – Enterprise SRL’s Logistics department shall verify that the received parcels are in full compliance with the details reported in the Advised Information, such as:</li>
+                <ul class="transportation"> 
+                    <li id="services-reception-content7">Name of Client/Sender/Consignee</li>
+                    <li id="services-reception-content8">Number of packages or boxes</li>
+                    <li id="services-reception-content9">Gross weight of packaging, bags and bars</li>
+                    <li id="services-reception-content10">Number of bags and bars</li>
+                    <li id="services-reception-content11">Total net weight of each bag and bar</li>
+                    <li id="services-reception-content12">Total estimated fine metal content of the shipment (per each metal) in troy ounces as per Client’s assays</li>
+                    <li id="services-reception-content13">Certified copy of Client’s assays in respect of the shipment evidencing the fine metal content estimates</li>
+                    <li id="services-reception-content14">Name of the Client’s Representative at the weighing, melting and sampling operations, if one is designated</li>
+                    <li id="services-reception-content15">Other information relating to the shipment as Enterprise SRL may reasonably request</li>
+                </ul>
+            </ul>
+            <p id="services-reception-content16" class="features-grid-history">Once the Logistics department has checked, verified and approved the incoming material, the material is then moved to the Balance Room, arranged as per Client’s requests/instructions.</p>
+            
+            <p id="services-reception-content17" class="features-grid-history">In the case of shipments requiring Client’s supervision by a Representative, the parcels are either temporarily stored in Enterprise SRL’s vault or directly moved to the Balance Room (sealed) where they are checked, opened and unpacked under the presence and control of the Client’s Representative. </p>
+                </div>
+                </div>
+        </section>
+
+        <!-- Assaying Section -->
+        <section id="assaying-section" class="spa-section">
+            <div class="container">
+                <h2 id="services-assaying-title" class="section-title">Assaying</h2>
+            
+                <div class="history">
+            <p id="services-assaying-content" class="features-grid-history">Enterprise SRL operates a state-of-the-art testing laboratory. Our testing methods are accredited since 1991 according to ISO/IEC 17025 standards. All sampling and testing activities are performed by independent certified precious metals assayers in compliance with the Precious Metals Control Law and supervised by the Office for Precious Metals Control.</p>
+            <p id="services-assaying-content1" class="features-grid-history">A highly qualified professional team carries out a whole range of analyses to ensure Enterprise SRL always meets both production and environmental standards of excellence.</p>
+            <p id="services-assaying-content2" class="features-grid-history">Our laboratory employs a comprehensive range of testing techniques as e.g. traditional Fire Assay, potentiometric methods, XRF, SPARK and ICP spectrometry. Testing methods are applied on a case-by-case basis and may include various testing techniques, applied singly or in combination, as appropriate. We maintain close and effective communication with our Clients and their Representatives and cooperate closely with the public authorities.</p>
+            <p id="services-assaying-title1" class="feature-title-history">Analysis process</p>
+            
+            <p  id="services-assaying-content4" class="features-grid-history">Phase 1 – The laboratory shall clean and drill the samples, putting the drillings from each sample into separate envelopes. The laboratory shall then analyze each individual sample to verify the homogeneity of the melt. If homogeneity is verified and there is an agreement for exchange of assays between the Client and Enterprise SRL, three equal final samples of usually 5 grams each shall be prepared with the drillings of the sample taken from the melt just before pouring. If homogeneity cannot be proved the lot shall be re-melted.</p>
+            
+            <p id="services-assaying-content5" class="features-grid-history">Phase 2 – The obtained samples are sealed by the Representative, labelled with the melt number and distributed as follows:</p>
+                <ul class="transportation">
+                    <li id="services-assaying-content6">a) One sealed sample is kept with Enterprise SRL at the Client’s disposal or delivered to its Representative, if present. Enterprise SRL will mail such sample to the Client or Client’s requested laboratory upon written instructions; </li>
+                    <li id="services-assaying-content7">b) One sealed sample is kept at Enterprise SRL’s laboratory to perform the analysis;</li>
+                    <li id="services-assaying-content8">c) One sealed sample remains with Enterprise SRL for contingent Umpire assay.</li>
+                </ul>
+            <p id="services-assaying-content9" class="features-grid-history">Phase 3 – Sampling of the recovery bar: the laboratory shall sample the recovery bar. The samples taken shall be put into separate envelopes, labelled with the melt number and the drilling side. The sample shall be analyzed by Valcambi to verify the homogeneity of the recovery bar.</p>
+            
+            <p id="services-assaying-content10" class="features-grid-history">Phase 4 – Preparation/sealing of the final samples of the recovery bar: if homogeneity of the recovery bar has been proved, three sealed envelopes shall be prepared, containing each usually 5 grams of drilled material, after having mixed equal parts of the drillings taken from the recovery bar. The samples obtained from the recovery bar are sequentially stored with the other samples.</p>
+            
+            <p id="services-assaying-content11" class="features-grid-history">Phase 5 – Assays: the assays shall be carried out by the fire assay method. Results of such assays shall be exchanged simultaneously between Client and Enterprise SRL by mail, on a date to be agreed upon and followed by fax or e-mail the following day. Should the difference between the exchanged results not exceed the Splitting Limits, then the arithmetic mean of the results of Enterprise SRL and Client shall be taken as final. </p>
+            
+            <p id="services-assaying-content12" class="features-grid-history">Phase 6 – Splitting Limits: subject to exchange of assays being contractually agreed upon the splitting limits are usually: 0.05% for Au and 0.20% for Ag in case of gold base material; 0.03% for Au and 0.20% for Ag in case of silver base material. For Pt and Pd Enterprise SRL’s assays will be final and binding.</p>
+            
+            <p id="services-assaying-content13" class="features-grid-history">Assay results shall be expressed to four (4) significant figures for 995,0 and higher fineness and five (5) significant figures for gold below 995,0 fineness.</p>
+            
+            <p id="services-assaying-content14" class="features-grid-history">Phase 7 – Umpire</p>
+                <ul class="transportation">
+                    <li id="services-assaying-content15">a) If the difference between the assays exceeds the splitting limits, both Client and Enterprise SRL shall have the right to ask for assays to be remade or to request an umpire analysis.</li>
+                    <li id="services-assaying-content16">b) The second assay or the Umpire analysis, if requested, has to be initiated within 4 (four) Business Days after the request is made.</li>
+                    <li id="services-assaying-content17">c) The Umpire assayer shall not be the Representative of Client or Enterprise SRL.</li>
+                    <li id="services-assaying-content18">d) The Umpire assayer shall be one of the firms previously agreed upon on a rotational basis and shall use the fire assay method. Any other organization may be designated as Umpire assayer by Client and Enterprise SRL from time to time upon mutual agreement.</li>
+                    <li id="services-assaying-content19">e) Umpire results </li>
+                </ul>
+            <p id="services-assaying-content20" class="features-grid-history">If the difference between Enterprise SRL’s and the Client’s assay results is equal or less than</p>
+            <p id="services-assaying-content21" class="features-grid-history">0.05% for Au and 0.20% for Ag in case of Gold Base Material</p>
+            <p id="services-assaying-content22" class="features-grid-history">0.03% for Au and 0.20% for Ag in case of Silver Base Material</p>
+            <p id="services-assaying-content23" class="features-grid-history">the average of the assay results of the Client and Enterprise SRL shall be taken as the agreed Settlement assay;</p>
+                <ul class="transportation">
+                    <li id="services-assaying-content24">If the subsequent Exchange exceeds the splitting limits, the Umpire sample shall be submitted within 4 (four) business days to one of the assayers set forth under (d) above which shall act as Umpire assayers on a shipment by shipment rotation basis. </li>
+                    <li id="services-assaying-content25">III. If Client or Enterprise SRL submit the Umpire sample to an Umpire assayer and the Umpire’s assay results are between the re-assay results of Client and Enterprise SRL, the Umpire’s results shall be final and binding on both parties for settlement.</li>
+                    <li id="services-assaying-content26">If the Umpire’s assay results are outside of the re-assay results of Client and Enterprise SRL, the assay results of the party closest to the Umpire re-assay results shall be final and binding on both parties for settlement.</li>
+                    <li id="services-assaying-content27">f) The cost of the Umpire’s assay shall be borne by the party whose re-assay results are furthest from that of the Umpire. if the Umpire’s assay should be the arithmetic mean between the re-assay results of the two parties, the costs of the Umpire’s assay shall be born equally by Client and Enterprise SRL. </li>
+                </ul>
+                </div>
+                </div>            
+        </section>
+
+        <!-- Smelting Section -->
+        <section id="smelting-section" class="spa-section">
+            <div class="container">
+                <h2 id="smelting-title" id="who-we-are-title" class="section-title">Smelting</h2>
+            
+                <div class="history">
+            <p id="smelting-content" class="features-grid-history">At Enterprise SRL our smelting process is the following: </p>
+            
+            <p id="smelting-content1" class="features-grid-history" >Phase 1 – Homogenization of the lots</p>
+            <p id="smelting-content2" class="features-grid-history">The material shall be melted in lots as prepared during the weighing process. Before melting any Client’s material, Enterprise shall clean the crucible to remove any residual contamination from previous melts.</p>
+            
+            <p id="smelting-content3" class="features-grid-history">Phase 2 – Representative sample</p>
+            <p id="smelting-content4" class="features-grid-history">Enterprise shall sample each melted lot by taking two or more representative samples of approximately 100/200 grams in the form of buttons, sample bars or any other suitable shape. Depending on the kind of material and on the lot size Enterprise will take the samples from the molten metal prior to and/or in course of pouring in ingots or anodes, by using the appropriate sampling devices. The samples must be representative of the melt and will be used to verify its homogeneity as well as to perform the analysis on the precious metal’s contents.</p>
+            
+            <p id="smelting-content5" class="features-grid-history">Phase 3 – Recovery bar</p>
+            <p id="smelting-content6" class="features-grid-history">Once all lots have been melted the cleaning procedure shall begin. This process includes the furnaces, the tools, the crucibles, the molds as well as the furnaces surrounding area. The recovered material is melted with the addition of flux and poured in the form of a bar suitable for sampling.</p>
+            
+            <p id="smelting-content7" class="features-grid-history">Phase 4 – Determination of the weights after melting</p>
+            <p id="smelting-content8" class="features-grid-history">The melted lots and the recovery bar shall be weighed to establish the “weight after melting” and the melting weight loss. Upon the Client’s request the slag produced during the melting shall be weighed, sealed and kept at the disposal of the Client or its Representative for a period of six months from the date of delivery unless otherwise agreed.</p>
+            
+            <p id="smelting-content9" class="features-grid-history">Phase 5 – Settlement weight</p>
+            <p id="smelting-content10" class="features-grid-history">The settlement weight per lot shall be the weight after melting less the weight of the Client’s sample. The umpire sample shall be deducted from the weight only if the Client wishes to enter into the umpire process.</p>
+            
+            <p id="smelting-content11" class="features-grid-history">Phase 6 – Reporting</p>
+            <p id="smelting-content12" class="features-grid-history">Upon completion of the weighing, melting and sampling operations described in this section, a report summarizing the following information shall be issued:</p>
+            
+                <ul class="transportation">
+                    <li id="smelting-content13">Date of the material’s arrival Enterprise SRL’s premises</li>
+                    <li id="smelting-content14">Client’s reference numbers</li>
+                    <li id="smelting-content15">Enterprise’s reference numbers</li>
+                    <li id="smelting-content16">Established net weight per lot</li>
+                    <li id="smelting-content17">Weight after melting</li>
+                    <li id="smelting-content18">Weight of the recovery bar</li>
+                    <li id="smelting-content19">Weight of Client’s samples</li>
+                    <li id="smelting-content20">Weight of Umpire sample</li>
+                    <li id="smelting-content21">Weight of the slag</li>
+                    <li id="smelting-content22">Closing remarks of the Representative in regards to the work performed</li>
+                    <li id="smelting-content23">Contingent remarks of Enterprise pertaining to the material received and the conduct of the operations</li>
+                </ul>
+             
+            <p id="smelting-content24" class="features-grid-history">The report shall be signed by an officer of Enterprise and by the Client’s Representative if so designated to attend. A copy of the report is handed over to the Representative or transmitted to the Client. A second copy is kept for Enterprise’s files.</p>
+                </div>
+                </div>
+        </section>
+
+        <!-- Destinations Section -->
+        <section id="destinations-section" class="spa-section">
+            <div class="container">
+                <h2 id="destinations-title" class="section-title">Destinations</h2> 
+            
+                <div class="history">
+                    <div class="destination__card--img"> <img src="assets/img/exports.png" alt="Exports" > </div>
+                    
+                </div>
+                </div>
+        </section>
+
+        <!-- Shipments Section -->
+        <section id="shipments-section" class="spa-section">
+            <div class="container">
+                <h2 id="exports-shipments-title" class="section-title">Shipments</h2>
+            
+              <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img class="service-image" src="assets/img/shipments01.jpg" alt="Trading Icon">
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img class="service-image" src="assets/img/shipments02.png" alt="Trading Icon">
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img class="service-image" src="assets/img/shipments03.jpg" alt="Trading Icon">
+                    </div>
+                </div>                                                    
+            </div>
+                </div>             
+        </section>
+        
+    </main>
+
+    <footer role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-content">
+                <!-- Left Column - Company Information -->
+                <div class="footer-left">
+                    <h3 class="footer-company-name">Enterprise S.R.L.</h3>
+                    <p id="footer-tagline" class="footer-tagline">
+                        Your trusted partner in precious metal trading and services
+                    </p>
+                    
+                    <nav class="footer-nav" aria-label="Footer navigation">
+                        <a id="nav-home" href="#home" data-section="home">Home</a>                        
+                        <a id="history" href="#history"  data-section="history"  >History</a>   
+                        <a id="team" href="#team"  data-section="team"  >Team</a>                           
+                        <a id="trading" href="#trading" data-section="trading">Trading</a>
+                        <a id="transportation" href="#transportation" data-section="transportation">Transportations</a>
+                        <a id="reception" href="#reception" data-section="reception">Reception</a>
+                        <a id="assaying" href="#assaying" data-section="assaying">Assaying</a>
+                        <a id="smelting" href="#smelting" data-section="smelting">Smelting</a>                        
+                        <a id="destinations" href="#destinations" data-section="destinations">Destinations</a>
+                        <a id="shipments" href="#shipments" data-section="shipments">Shipments</a>
+                    </nav>
+                </div>
+
+                <!-- Right Column - Social Networks -->
+                <div class="footer-right">
+                    <h3 id="footer-title" class="footer-company-name">Follow me on my Social Networks</h3>
+                    
+                    <div class="social-icons">
+                        <!-- WhatsApp -->
+                        <a href="https://wa.me/+59167023053/?text=Hello,%20I%20would%20like%20to%20inquire%20about%20your%20services." class="social-icon" aria-label="Contáctanos en WhatsApp" target="_blank" rel="noopener noreferrer">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.451 3.488"/>
+                            </svg>
+                        </a>
+                        
+                        <!-- Email -->
+                        <a href="mailto:fabinnerself@gmail.com?subject=Consulta%20sobre%20tus%20servicios" class="social-icon" aria-label="Envíanos un email" target="_blank" rel="noopener noreferrer">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                        </a>
+                        
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/favian-medina-gemio/" class="social-icon" aria-label="Síguenos en LinkedIn" target="_blank" rel="noopener noreferrer">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/fabinnerself" class="social-icon" aria-label="Síguenos en Facebook" target="_blank" rel="noopener noreferrer">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        
+                        <!-- X (Twitter) -->
+                        <a href="https://x.com/favinnerself" class="social-icon" aria-label="Síguenos en X (Twitter)" target="_blank" rel="noopener noreferrer">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                     
+                </div>
+            </div>
+
+            <!-- Copyright Section -->
+            <div class="copyright">
+                <p id="footer-final">&copy; 2025 Enterprise S.R.L.  All rights reserved. | Professional Precious Metal Services</p>
+            </div>
+        </div>        
+    </footer>
+   
+    <!-- SCRIPT OPTIMIZADO - Menú responsivo mejorado -->
+    <script src="assets/js/main.js"></script>
+ 
+</body>
+</html>
